@@ -13,3 +13,6 @@ npx hardhat node
 node scripts/sample-script.js
 npx hardhat help
 ```
+
+ERC TOKEN STANDARD
+https://docs.openzeppelin.com/contracts/2.x/api/token/erc20
