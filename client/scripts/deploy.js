@@ -15,11 +15,13 @@ async function main() {
 
   // We get the contract to deploy
   const Greeter = await hre.ethers.getContractFactory("Greeter");
+  //inital state once we deploy it to the blockchain. constructor runs function when deployed
   const greeter = await Greeter.deploy("Hello, Hardhat!");
 
   await greeter.deployed();
 
-  console.log("Greeter deployed to:", greeter.address);
+  //address to be deployed and saved for our frontend.
+  console.log("Greeter Contract deployed to:", greeter.address);
 }
 
 // We recommend this pattern to be able to use async/await everywhere
